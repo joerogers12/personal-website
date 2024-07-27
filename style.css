@@ -1,0 +1,25 @@
+h1 {
+    font-size: 5em;
+}
+
+/* img {
+    width: 100px
+} */
+
+body {
+    background-color: darkslategray;
+}
+
+div {
+    font-size: 2em;
+    background-color: darkkhaki;
+    color: saddlebrown;
+}
+
+#Profile_Pic {
+    height: 500px;
+}
+
+.socials {
+    height: 50px;
+}
