@@ -59,3 +59,9 @@ body {
 .socials img:hover {
     height: 110px;
 }
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: black;
+    }
+}
