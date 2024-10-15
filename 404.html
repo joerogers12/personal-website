@@ -4,17 +4,28 @@
         <meta charset="utf-8">
         <title>Joe Rogers</title>
         <script type="text/javascript">
+            // Dictionary for redirect rules
             const redirects = {
                 "resume": "resume.pdf"
             }
 
-            const path  = window.location.pathname.substring(18).toLowerCase();
+            // Pathname that caused the 404, want to make lower case and remove the extra characters at beginning
+            const path = window.location.pathname.substring(18).toLowerCase();
 
+            // Gets the value from the dictionary of the path that caused the 404
             const redirect = redirects[path];
 
+            // Path exists, change window location to associated correct path
             if (redirect) {
                 window.location.replace(redirect);
             }
+            // Path doesn't exist, redirect to main page (this won't ever show 404)
+            else {
+                window.location.replace("https://joerogers12.github.io/personal-website/");
+            }
         </script>
     </head>
+    <body>
+        <h1>404 Not Found</h1>
+    </body>
 </html>
