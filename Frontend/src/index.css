@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,18 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+:root {
+  background-color: rgb(229, 66, 66);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 5em;
+}
+
+h1:hover {
+  filter: drop-shadow(0 0 5em #17c272);
 }
