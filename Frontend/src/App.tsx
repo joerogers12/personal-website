@@ -37,7 +37,7 @@
 import { useState } from 'react'
 import './App.css'
 
-function Example(props: any) {
+function Example() {
   const [letter, setLetter] = useState<string>('a');
   const [count, setCount] = useState<number>(1);
 
