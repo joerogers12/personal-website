@@ -34,13 +34,27 @@
 
 // export default App
 
-import { useState } from 'react'
+import React, { useState } from 'react'
 import './App.css'
+
+function Example() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <h1>You have pressed this {count} times</h1>
+      <button onClick={() => setCount(count + 1)}>
+        Increment!
+      </button>
+    </div>
+  )
+}
 
 function App() {
   return (
     <>
       <h1>Joe Rogers</h1>
+      <Example />
     </>
   )
 }
