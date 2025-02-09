@@ -37,13 +37,21 @@
 import React, { useState } from 'react'
 import './App.css'
 
-function Example() {
-  const [count, setCount] = useState(0);
+function Example(props: any) {
+  const [letter, setLetter] = useState<string>('a');
+  const [count, setCount] = useState<number>(1);
+
+  const unreadMessages = props.unreadMessages;
+
+  const handleCLick = () => {
+    setCount(count + 1);
+    setLetter(String.fromCharCode(letter.charCodeAt(0) + 1));  
+  };
 
   return (
     <div>
-      <h1>You have pressed this {count} times</h1>
-      <button onClick={() => setCount(count + 1)}>
+      <h1>{letter} is the {count}th letter of the alphabet!</h1>
+      <button onClick = {handleCLick}>
         Increment!
       </button>
     </div>
