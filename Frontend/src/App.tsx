@@ -34,14 +34,14 @@
 
 // export default App
 
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 
 function Example(props: any) {
   const [letter, setLetter] = useState<string>('a');
   const [count, setCount] = useState<number>(1);
 
-  const unreadMessages = props.unreadMessages;
+  // const unreadMessages = props.unreadMessages;
 
   const handleCLick = () => {
     setCount(count + 1);
