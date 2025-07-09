@@ -19,3 +19,11 @@ main {
   margin-left: 280px;
 
 }
+
+.about-me {
+  height: 100vh;
+}
+
+.project-image {
+  width: 600px;
+}
