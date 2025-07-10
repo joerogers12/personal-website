@@ -24,6 +24,10 @@ main {
   height: 100vh;
 }
 
+.projects {
+  height: 100vh;
+}
+
 .project-image {
   width: 600px;
 }
