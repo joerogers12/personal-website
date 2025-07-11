@@ -20,12 +20,16 @@ main {
   margin-right: 380px;
 }
 
-.about-me {
+.container {
   height: 100vh;
 }
 
+.about-me {
+
+}
+
 .projects {
-  height: 100vh;
+
 }
 
 .project-image {
