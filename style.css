@@ -16,17 +16,21 @@ aside {
 }
 
 main {
-  margin-left: 280px;
-  max-width: 1120px;
+  padding-left: 320px;
+  padding-right: 320px;
 }
 
 .container {
   height: 100vh;
-  padding-top: 2rem;
 }
 
 .about-me {
-
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .projects {
