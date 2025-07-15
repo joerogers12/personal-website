@@ -16,8 +16,8 @@ aside {
 }
 
 main {
-  margin-left: 380px;
-  margin-right: 380px;
+  margin-left: 280px;
+  max-width: 1120px;
 }
 
 .container {
