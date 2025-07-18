@@ -16,12 +16,13 @@ aside {
 }
 
 main {
-  padding-left: 320px;
-  padding-right: 320px;
+  
 }
 
 .container {
   height: 100vh;
+  padding-left: 320px;
+  padding-right: 320px;
 }
 
 .about-me {
@@ -31,6 +32,9 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image: url("/images/sincerely-media-K5OLjMlPe4U-unsplash.jpg");
+  background-size: cover;
+  width: 100%;
 }
 
 .biography {
