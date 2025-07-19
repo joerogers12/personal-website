@@ -1,4 +1,7 @@
-if (window) {
-  let toolbarHeight = window.outerHeight - window.innerHeight;
-  console.log("Toolbar height: " + toolbarHeight + "px");   
-}
+import express from "express";
+import axios from "axios";
+
+const app = express();
+const port = 3000;
+
+app.get()
