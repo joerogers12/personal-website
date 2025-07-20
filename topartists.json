@@ -1,0 +1,49 @@
+[
+  {
+    "name": "FIDLAR",
+    "image": "https://i.scdn.co/image/ab6761610000e5ebc184c01e434b1237b940376d",
+    "genres": [
+      "garage rock",
+      "surf rock",
+      "skate punk",
+      "indie punk"
+    ]
+  },
+  {
+    "name": "Sex Mex",
+    "image": "https://i.scdn.co/image/ab6761610000e5ebf7791d27edb3666f0d8ef181",
+    "genres": [
+      "egg punk",
+      "garage rock",
+      "indie punk"
+    ]
+  },
+  {
+    "name": "Current Joys",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb4a0ff79c4f265a74b3037b22",
+    "genres": [
+      "lo-fi indie"
+    ]
+  },
+  {
+    "name": "Sewerslvt",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb8a1271f7f32e5202924ebff2",
+    "genres": [
+      "breakcore",
+      "jungle",
+      "speedcore",
+      "hyperpop"
+    ]
+  },
+  {
+    "name": "System Of A Down",
+    "image": "https://i.scdn.co/image/ab6761610000e5eb60063d3451ade8f9fab397c2",
+    "genres": [
+      "nu metal",
+      "metal",
+      "alternative metal",
+      "rap metal",
+      "rock"
+    ]
+  }
+]
