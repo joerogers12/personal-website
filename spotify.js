@@ -28,7 +28,7 @@ async function getAccessToken() {
 }
 
 // Adds the top artists to JSON file
-async function fetchTopArtists() {
+export async function fetchTopArtists() {
   const NUM_ARTISTS = 5;
   const accessToken = await getAccessToken();
 
@@ -47,6 +47,3 @@ async function fetchTopArtists() {
   // Write the stringified JS array to the JSON file (replacer: null -> don't filter out any keys, spaces: 2 -> indent with 2 spaces)
   fs.writeFileSync("./topArtists.json", JSON.stringify(topArtists, null, 2));
 }
-
-// Export the function so other files can use it
-module.exports = { fetchTopArtists };

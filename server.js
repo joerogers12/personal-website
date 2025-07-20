@@ -1,8 +1,8 @@
 import express from "express";
-import js from "js";
+import fs from "fs";
 import path from "path";
 import dotenv from "dotenv";
-import fetchTopArtists from "./spotify";
+import { fetchTopArtists } from "./spotify.js";
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -29,4 +29,4 @@ app.get("/", (req, res) => {
   res.render("index.ejs");
 });
 
-app.listen(PORT, () => console.log(`Server running on port ${port}`));
+app.listen(port, () => console.log(`Server running on port ${port}`));
