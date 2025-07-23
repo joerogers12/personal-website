@@ -23,10 +23,10 @@ main {
   height: 100vh;
   padding-left: 320px;
   padding-right: 320px;
+  padding-top: 3rem;
 }
 
 .about-me {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,6 +35,7 @@ main {
   background-image: url("/images/sincerely-media-K5OLjMlPe4U-unsplash.jpg");
   background-size: cover;
   width: 100%;
+  padding-top: 12rem;
 }
 
 .biography {
