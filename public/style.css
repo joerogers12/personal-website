@@ -21,9 +21,10 @@ main {
 
 .container {
   height: 100vh;
-  padding-left: 320px;
-  padding-right: 320px;
-  padding-top: 3rem;
+  /* padding-left: 320px;
+  padding-right: 320px; */
+  /* padding-top: 3rem; */
+  
 }
 
 .about-me {
@@ -35,11 +36,10 @@ main {
   background-image: url("/images/sincerely-media-K5OLjMlPe4U-unsplash.jpg");
   background-size: cover;
   width: 100%;
-  padding-top: 12rem;
 }
 
 .biography {
-  margin-bottom: 112px;
+
 }
 
 .projects {
