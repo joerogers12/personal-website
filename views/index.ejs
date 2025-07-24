@@ -22,20 +22,11 @@
         <% const sidebarSections = ["About Me", "Projects", "Skills", "Certificates", "Resume", "Transcript", "Contact", "Blog", "Personal Interests"]; %>
         
         <% sidebarSections.forEach((section) => { %>
+          <% const id = section.toLowerCase().replace(/\s+/g, '-'); %>
           <li class="nav-item">
-            <a href="#" class="nav-link link-body-emphasis" aria-current="page"><%= section %></a>
+            <a href="#<%= id %>" class="nav-link link-body-emphasis" aria-current="page"><%= section %></a>
           </li>
-        <% }) %>        
-
-        <!-- <li class="nav-item"><a href="#" class="nav-link link-body-emphasis" aria-current="page">About Me</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis" aria-current="page">Projects</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis" aria-current="page">Skills</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis" aria-current="page">Certificates</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis" aria-current="page">Resume</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis" aria-current="page">Transcript</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis" aria-current="page">Contact</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis" aria-current="page">Blog</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis" aria-current="page">Personal Interests</a></li> -->
+        <% }); %>        
       </ul>
 
     </aside>
@@ -44,7 +35,7 @@
     <main>
 
       <!-- About Me -->
-      <div class="about-me">
+      <div class="about-me" id="about-me">
         <div class="px-4 py-5 my-5 text-center">
           <h1 class="m-5">
             Hello
@@ -64,7 +55,7 @@
       </div>
 
       <!-- Projects -->
-      <div class="container projects">
+      <div class="container projects" id="projects">
         <h2>
           Projects
         </h2>
@@ -80,7 +71,7 @@
       </div>
 
       <!-- Skills -->
-      <div class="container skills">
+      <div class="container skills" id="skills">
         <h2>
           Skills
         </h2>
@@ -88,7 +79,7 @@
       </div>
 
       <!-- Certificates -->
-      <div class="container certificates">
+      <div class="container certificates" id="certificates">
         <h2>
           Certificates
         </h2>
@@ -96,7 +87,7 @@
       </div>
 
       <!-- Resume -->
-      <div class="container resume">
+      <div class="container resume" id="resume">
         <h2>
           Resume
         </h2>
@@ -104,7 +95,7 @@
       </div>
 
       <!-- Transcript -->
-      <div class="container transcript">
+      <div class="container transcript" id="transcript">
         <h2>
           Transcript
         </h2>
@@ -112,7 +103,7 @@
       </div>
 
       <!-- Contact -->
-      <div class="container contact">
+      <div class="container contact" id="contact">
         <h2>
           Contact
         </h2>
@@ -120,7 +111,7 @@
       </div>
 
       <!-- Blog -->
-      <div class="container blog">
+      <div class="container blog" id="blog">
         <h2>
           Blog
         </h2>
@@ -128,7 +119,7 @@
       </div>
 
       <!-- Personal Interests -->
-      <div class="container personal-interests">
+      <div class="container personal-interests" id="personal-interests">
         <h2>
           Personal Interests
         </h2>
