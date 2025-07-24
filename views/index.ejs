@@ -13,12 +13,21 @@
 
     <!-- Sidebar -->
     <aside>
+
       <a href="/" id="name-text" class="link-body-emphasis">
         Joe Rogers
       </a>
 
-      <ul class="nav nav-pills flex-column mb-auto">
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis" aria-current="page">About Me</a></li>
+      <ul id="sidebar" class="nav nav-pills mb-auto">
+        <% const sidebarSections = ["About Me", "Projects", "Skills", "Certificates", "Resume", "Transcript", "Contact", "Blog", "Personal Interests"]; %>
+        
+        <% sidebarSections.forEach((section) => { %>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis" aria-current="page"><%= section %></a>
+          </li>
+        <% }) %>        
+
+        <!-- <li class="nav-item"><a href="#" class="nav-link link-body-emphasis" aria-current="page">About Me</a></li>
         <li class="nav-item"><a href="#" class="nav-link link-body-emphasis" aria-current="page">Projects</a></li>
         <li class="nav-item"><a href="#" class="nav-link link-body-emphasis" aria-current="page">Skills</a></li>
         <li class="nav-item"><a href="#" class="nav-link link-body-emphasis" aria-current="page">Certificates</a></li>
@@ -26,8 +35,9 @@
         <li class="nav-item"><a href="#" class="nav-link link-body-emphasis" aria-current="page">Transcript</a></li>
         <li class="nav-item"><a href="#" class="nav-link link-body-emphasis" aria-current="page">Contact</a></li>
         <li class="nav-item"><a href="#" class="nav-link link-body-emphasis" aria-current="page">Blog</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis" aria-current="page">Personal Interests</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis" aria-current="page">Personal Interests</a></li> -->
       </ul>
+
     </aside>
 
     <!-- Main Content -->
