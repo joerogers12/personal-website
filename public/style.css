@@ -6,25 +6,28 @@ body {
 text-shadow: 2px 2px 0px #08853e;
 }
 
+.full-page {
+  display: flex;
+  background-image: url("/images/sincerely-media-K5OLjMlPe4U-unsplash.jpg");
+}
+
 aside {
-  position: fixed;
+  flex-shrink: 0;
+  padding: 1rem;
+  position: sticky;
   top: 0;
   left: 0;
   height: 100vh;
-  width: 250px;
+  /* width: 250px; */
   overflow-y: auto
 }
 
 main {
-  
+  flex-grow: 1;
 }
 
 .container {
-  height: 100vh;
-  /* padding-left: 320px;
-  padding-right: 320px; */
-  /* padding-top: 3rem; */
-  
+
 }
 
 .about-me {
@@ -33,7 +36,6 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("/images/sincerely-media-K5OLjMlPe4U-unsplash.jpg");
   background-size: cover;
   width: 100%;
 }
