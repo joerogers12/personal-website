@@ -40,6 +40,22 @@ aside {
   margin-bottom: auto;
 }
 
+#sidebar a.active {
+  font-weight: bold;
+  color: #007bff; /* or your brand color */
+}
+
+#sidebar a.active::before {
+  content: "• ";
+  color: #007bff;
+  font-weight: bold;
+}
+
+#sidebar a.active {
+  background-color: #0d6efd;
+  color: white;
+}
+
 main {
   flex-grow: 1;
 }
