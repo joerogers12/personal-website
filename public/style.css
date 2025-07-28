@@ -45,8 +45,8 @@ aside {
 }
 
 #sidebar a.observed::before {
-  content: "• ";
-  color: #06763a;
+  content: "𖥸 ";
+  color: #2a9e60;
   font-weight: bold;
 }
 
