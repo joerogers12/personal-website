@@ -39,12 +39,22 @@ aside {
   margin-bottom: auto;
 }
 
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #eb9650;
+  }
+  50% {
+    box-shadow: 0 0 20px #eb9650;
+  }
+  100% {
+    box-shadow: 0 0 5px #eb9650;
+  }
+}
+
 #sidebar a.observed {
+  color: #65a27f !important;
   font-weight: bold;
-    box-shadow:
-    0 0 6px 3px #fff,  /* inner white */
-    0 0 10px 6px #f0f, /* middle magenta */
-    0 0 14px 9px #0ff; /* outer cyan */
+  animation: glow 3.5s ease-in-out infinite;
 }
 
 /* #sidebar a.observed::before {
