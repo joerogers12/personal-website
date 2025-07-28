@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const link = document.querySelector(`#sidebar a[href="#${id}"]`);
 
       if (entry.isIntersecting) {
-        navLinks.forEach(link => link.classList.remove("active"));
-        link.classList.add("active");
+        navLinks.forEach(link => link.classList.remove("observed"));
+        link.classList.add("observed");
       }
     });
   }, {
-    threshold: 0.6
+    threshold: 0.1,
   });
 
   sections.forEach(section => observer.observe(section));

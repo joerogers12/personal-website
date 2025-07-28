@@ -39,21 +39,21 @@ aside {
   margin-bottom: auto;
 }
 
-#sidebar a.active {
+#sidebar .nav-link.observed {
   font-weight: bold;
-  color: #007bff; /* or your brand color */
+  color: #000000;
 }
 
-#sidebar a.active::before {
+#sidebar a.observed::before {
   content: "• ";
-  color: #007bff;
+  color: #06763a;
   font-weight: bold;
 }
 
-#sidebar a.active {
+/* #sidebar a.active {
   background-color: #0d6efd;
   color: white;
-}
+} */
 
 main {
   flex-grow: 1;
