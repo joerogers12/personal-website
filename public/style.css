@@ -39,20 +39,18 @@ aside {
   margin-bottom: auto;
 }
 
-#sidebar .nav-link.observed {
+#sidebar a.observed {
   font-weight: bold;
-  color: #000000;
+    box-shadow:
+    0 0 6px 3px #fff,  /* inner white */
+    0 0 10px 6px #f0f, /* middle magenta */
+    0 0 14px 9px #0ff; /* outer cyan */
 }
 
-#sidebar a.observed::before {
+/* #sidebar a.observed::before {
   content: "𖥸 ";
   color: #2a9e60;
   font-weight: bold;
-}
-
-/* #sidebar a.active {
-  background-color: #0d6efd;
-  color: white;
 } */
 
 main {
