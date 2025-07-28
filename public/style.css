@@ -19,8 +19,9 @@ aside {
   top: 0;
   left: 0;
   height: 100vh;
-  /* width: 250px; */
-  overflow-y: auto
+  overflow-y: auto;
+  background-color: #385b47;
+  border-right: 1px solid #787878;
 }
 
 #name-text {
