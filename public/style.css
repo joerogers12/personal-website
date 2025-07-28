@@ -41,20 +41,20 @@ aside {
 
 @keyframes glow {
   0% {
-    box-shadow: 0 0 5px #eb9650;
+    box-shadow: 0 0 10px #eb9650;
   }
   50% {
     box-shadow: 0 0 20px #eb9650;
   }
   100% {
-    box-shadow: 0 0 5px #eb9650;
+    box-shadow: 0 0 10px #eb9650;
   }
 }
 
 #sidebar a.observed {
   color: #65a27f !important;
   font-weight: bold;
-  animation: glow 3.5s ease-in-out infinite;
+  animation: glow 3s ease-in-out infinite;
 }
 
 /* #sidebar a.observed::before {
