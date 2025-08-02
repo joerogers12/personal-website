@@ -24,12 +24,12 @@ aside {
   border-right: 1px solid #787878;
   max-width: 20rem;
   transition: max-width 0.5s ease, opacity 0.4s ease;
-
 }
 
 aside.collapsed {
   max-width: 0;
-  padding: 0;
+  padding-right: 0;
+  padding-left: 0;
   border-right: none;
   overflow: hidden;
   opacity: 0.3;
