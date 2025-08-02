@@ -110,3 +110,16 @@ section {
 .project-image {
   width: 600px;
 }
+
+.top-artist-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.artist-card {
+  margin: 3rem;
+}
+
+.artist-image {
+  height: 20rem;
+}

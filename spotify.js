@@ -29,7 +29,7 @@ async function getAccessToken() {
 
 // Adds the top artists to JSON file
 export async function fetchTopArtists() {
-  const TIME_RANGE = "short_term" // short_term (~ 4 weeks), medium_term (default, ~ 6 months), long_term (~ 1 year)
+  const TIME_RANGE = "long_term" // short_term (~ 4 weeks), medium_term (default, ~ 6 months), long_term (~ 1 year)
   const NUM_ARTISTS = 6;
   const accessToken = await getAccessToken();
 
