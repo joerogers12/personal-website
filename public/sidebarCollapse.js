@@ -1,6 +1,13 @@
-const toggleButton = document.getElementById("toggle-sidebar");
+const collapseButton = document.getElementById("collapse-sidebar");
+const expandButton = document.getElementById("expand-sidebar");
 const sidebar = document.querySelector("aside");
 
-toggleButton.addEventListener("click", () => {
+collapseButton.addEventListener("click", () => {
   sidebar.classList.toggle("collapsed");
+  expandButton.style.display = "block";
+});
+
+expandButton.addEventListener("click", () => {
+  sidebar.classList.remove("collapsed");
+  expandButton.style.display = "none";
 });

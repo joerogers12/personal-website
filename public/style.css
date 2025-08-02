@@ -22,7 +22,7 @@ aside {
   overflow-y: auto;
   background-color: #385b47;
   border-right: 1px solid #787878;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 aside.collapsed {
@@ -51,10 +51,6 @@ aside.collapsed {
   text-shadow: 2px 2px 0px #08853e;
 }
 
-#collapse-icon {
-  color: white;
-}
-
 #sidebar {
   display: flex;
   flex-direction: column;
@@ -79,8 +75,20 @@ aside.collapsed {
   background-color: #23402e;
 }
 
-.bi-caret-left-square {
+#collapse-sidebar {
   color: white;
+  cursor: pointer;
+}
+
+#expand-sidebar {
+  transform: rotate(180deg);
+  position: fixed;
+  top: 2.5rem;
+  left: 1.5rem;
+  z-index: 1000;
+  display: none;
+  cursor: pointer;
+  color: #08853e;
 }
 
 main {
@@ -88,11 +96,7 @@ main {
   flex-direction: column;
   flex-grow: 1;
   align-items: center;
-  transition: margin-left 0.3s ease;
-}
-
-aside.collapsed + main {
-
+  transition: margin-left 0.5s ease;
 }
 
 section {
