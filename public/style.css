@@ -68,6 +68,7 @@ aside {
 #sidebar a.observed {
   font-weight: bold;
   animation: glow 3s ease-in-out infinite;
+  background-color: #23402e;
 }
 
 .bi-caret-left-square {
