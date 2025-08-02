@@ -22,17 +22,17 @@ aside {
   overflow-y: auto;
   background-color: #385b47;
   border-right: 1px solid #787878;
-  max-width: 20rem;
-  transition: max-width 0.5s ease, opacity 0.4s ease;
+  width: 15rem;
+  transition: width 0.5s ease, opacity 0.1s ease;
 }
 
 aside.collapsed {
-  max-width: 0;
+  width: 0;
   padding-right: 0;
   padding-left: 0;
   border-right: none;
   overflow: hidden;
-  opacity: 0.3;
+  opacity: 0;
 }
 
 #sidebar-header {
@@ -100,7 +100,6 @@ main {
   flex-direction: column;
   flex-grow: 1;
   align-items: center;
-  transition: margin-left 0.5s ease;
 }
 
 section {
