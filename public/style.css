@@ -22,6 +22,14 @@ aside {
   overflow-y: auto;
   background-color: #385b47;
   border-right: 1px solid #787878;
+  transition: all 0.3s ease;
+}
+
+aside.collapsed {
+  width: 0;
+  padding: 0;
+  border-right: none;
+  overflow: hidden;
 }
 
 #sidebar-header {
@@ -80,6 +88,11 @@ main {
   flex-direction: column;
   flex-grow: 1;
   align-items: center;
+  transition: margin-left 0.3s ease;
+}
+
+aside.collapsed + main {
+
 }
 
 section {
