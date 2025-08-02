@@ -108,7 +108,11 @@ section {
 }
 
 .project-image {
-  width: 600px;
+  width: 60rem;
+}
+
+.cert-image {
+  width: 60rem;
 }
 
 .top-artist-list {

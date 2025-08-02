@@ -7,6 +7,8 @@ dotenv.config();
 
 //Gets a fresh token from Spotify's authentication system
 async function getAccessToken() {
+  console.log("Accessing Spotify API");
+
   // Build query string-style data to use refresh token to request new access token with Spotify's OAuth API specifications
   const params = new URLSearchParams();
   params.append("grant_type", "refresh_token");
