@@ -16,8 +16,27 @@ setInterval(() => {
   fetchTopArtists().catch(err => console.error("Error refreshing top artists:", err));
 }, REFRESH_RATE);
 
-// Fetch artists immediately upon startup
-fetchTopArtists().catch(err => console.error("Error fetching top artists on startup:", err));
+const CACHE_FILE = "./topArtists.json";
+const ONE_HOUR = 1000 * 60 * 60;
+
+// Checks if json cache hasn't been updated in the last hour
+function isCacheStale(filePath, maxAgeMs) {
+  try {
+    const stats = fs.statSync(filePath);
+    const age = Date.now() - stats.mtimeMs;
+    return age > maxAgeMs;
+  } catch (err) {
+    return true; // File doesn't exist or can't be read
+  }
+}
+
+// Fetch artists immediately upon startup if cache is missing or stale
+if (isCacheStale(CACHE_FILE, ONE_HOUR)) {
+  fetchTopArtists().catch(err => console.error("Error fetching top artists on startup:", err));  
+}
+else {
+  console.log("Using cached top artists; no fetch needed on startup.");
+}
 
 // API endpoint to serve cached data
 app.get("/api/top-artists", (req, res) => {
