@@ -125,10 +125,12 @@ section {
 
 #intro-header {
   margin: 3rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #biography {
   max-width: 60rem;
+  font-size: large;
 }
 
 .projects {
@@ -136,11 +138,11 @@ section {
 }
 
 .project-image {
-  width: 60rem;
+  width: 20rem;
 }
 
 .cert-image {
-  width: 60rem;
+  width: 20rem;
 }
 
 .top-artist-list {
