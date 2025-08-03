@@ -23,7 +23,7 @@ aside {
   background-color: #385b47;
   border-right: 1px solid #787878;
   width: 15rem;
-  transition: width 0.5s ease, opacity 0.1s ease;
+  transition: width 0.5s ease, opacity 0.5s ease;
 }
 
 aside.collapsed {
@@ -55,6 +55,22 @@ aside.collapsed {
   flex-shrink: 0;
 }
 
+#collapse-sidebar {
+  color: white;
+  cursor: pointer;
+}
+
+#expand-sidebar {
+  transform: rotate(180deg);
+  position: fixed;
+  top: 2.5rem;
+  left: 1.5rem;
+  z-index: 1000;
+  display: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+
 #sidebar {
   display: flex;
   flex-direction: column;
@@ -73,26 +89,14 @@ aside.collapsed {
   }
 }
 
+#sidebar a {
+  white-space: nowrap;
+}
+
 #sidebar a.observed {
   font-weight: bold;
   animation: glow 3s ease-in-out infinite;
   background-color: #23402e;
-}
-
-#collapse-sidebar {
-  color: white;
-  cursor: pointer;
-}
-
-#expand-sidebar {
-  transform: rotate(180deg);
-  position: fixed;
-  top: 2.5rem;
-  left: 1.5rem;
-  z-index: 1000;
-  display: none;
-  cursor: pointer;
-  color: #ffffff;
 }
 
 main {
