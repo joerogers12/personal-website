@@ -128,9 +128,29 @@ section {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#biography {
-  max-width: 60rem;
-  font-size: large;
+#full-bio-block {
+  display: flex;
+  flex-direction: row;
+  text-align: start;
+}
+
+#intro-block {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+#intro {
+  margin: 2rem;  
+}
+
+#education {
+  margin: 2rem;
+}
+
+#tech-stack {
+  flex: 1;
+  margin: 2rem;
 }
 
 .projects {
