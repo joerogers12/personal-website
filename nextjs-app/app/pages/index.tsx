@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joe Rogers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="/style.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Full Page-->
+  <div class="full-page">
+
+    <!-- Sidebar -->
+    <aside>
+      <div id="sidebar-header">
+        <a href="/" id="name-text" class="link-body-emphasis">
+          Joe Rogers
+        </a>
+        <svg id="collapse-sidebar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-square" viewBox="0 0 16 16">
+          <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+          <path d="M10.205 12.456A.5.5 0 0 0 10.5 12V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4a.5.5 0 0 0 .537.082"/>
+        </svg>
+      </div>
+
+      <ul id="sidebar" class="nav nav-pills">
+        <% const sidebarSections = ["About Me", "Projects", "Skills", "Certificates", "Resume", "Transcript", "Contact", "Blog", "Personal Interests"]; %>
+        
+        <% sidebarSections.forEach((section) => { %>
+          <% const id = section.toLowerCase().replace(/\s+/g, '-'); %>
+          <li class="nav-item">
+            <a href="#<%= id %>" class="nav-link link-body-emphasis" aria-current="page"><%= section %></a>
+          </li>
+        <% }); %>        
+      </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+
+      <!-- About Me -->
+      <section class="about-me" id="about-me">
+        <svg id="expand-sidebar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-square" viewBox="0 0 16 16">
+          <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+          <path d="M10.205 12.456A.5.5 0 0 0 10.5 12V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4a.5.5 0 0 0 .537.082"/>
+        </svg>
+        <h1 id="intro-header">Welcome to Meeting Me</h1>
+        <div id="full-bio-block">
+          <div id="intro-block">
+            <div id="intro">
+              Hi, I’m Joe — a former farmer and current Software Engineer in training with a passion for building scalable tools and impactful tech
+              Currently working on:
+              An application built for farmers to easily manage their crops and records
+              A web app for ICS students to compare courses & professors and build their schedules accordingly
+            </div>
+            <div id="education">
+              <h2>Education</h2>
+              Studying Software Engineering @ UC Irvine (B.S.)
+              Previously earned a B.S. in Mechanical Engineering @ UC Irvine
+            </div>
+          </div>
+          <div id="tech-stack">
+            <h2>Tech Stack</h2>
+            Building in Java, Python, C++, and JavaScript — and always learning more
+            Goal: Contribute to teams solving real-world problems through thoughtful design, customer focus, and ingenuity
+            Open to internships and software roles where I can grow, learn, and make meaningful contributions
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="projects" id="projects">
+        <h2>
+          Projects
+        </h2>
+        <h3 class="project-name">
+          ZotScope
+        </h3>
+        <div class="project row">
+          <p class="description col">
+            Overview: 
+          </p>
+          <img src="images/zotscopeHome.png" alt="Zotscope's home page" class="project-image">
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="skills" id="skills">
+        <h2>
+          Skills
+        </h2>
+
+      </section>
+
+      <!-- Certificates -->
+      <section class="certificates" id="certificates">
+        <h2>
+          Certificates
+        </h2>
+        <img src="/images/fullStackCert.jpg" alt="Joe Rogers's Full Stack Bootcamp Certification" class="cert-image"/>
+        
+      </section>
+
+      <!-- Resume -->
+      <section class="resume" id="resume">
+        <h2>
+          Resume
+        </h2>
+        
+      </section>
+
+      <!-- Transcript -->
+      <section class="transcript" id="transcript">
+        <h2>
+          Transcript
+        </h2>
+        
+      </section>
+
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <h2>
+          Contact
+        </h2>
+        
+      </section>
+
+      <!-- Blog -->
+      <section class="blog" id="blog">
+        <h2>
+          Blog
+        </h2>
+        
+      </section>
+
+      <!-- Personal Interests -->
+      <section class="personal-interests" id="personal-interests">
+        <h2>
+          Personal Interests
+        </h2>
+        <h3>
+          My Top Spotify Artists
+        </h3>
+        <div class="top-artist-list">
+          <% if (artists && artists.length) { %>
+            <% artists.forEach(artist => { %>
+              <div class="artist-card">
+                <% if (artist.image) { %>
+                  <img src="<%= artist.image %>" alt="<%= artist.name %>" class="artist-image">
+                <% } %>
+                <h5 class="artist-title"><%= artist.name %></h5>
+              </div>
+            <% }) %>
+          <% } else { %>
+            <p>No artists found.</p>
+          <% } %>
+        </div>
+      </section>
+    </main>
+    
+  </div>
+  
+  <script src="/sidebarHighlight.js"></script>
+  <script src="/sidebarCollapse.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+</body>
+</html>
