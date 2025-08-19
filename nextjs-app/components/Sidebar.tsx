@@ -17,7 +17,7 @@ function Sidebar() {
           setActiveSection(entry.target.id);
         }
       });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.3 });
 
     sections.forEach(section => observer.observe(section));
     return () => observer.disconnect();
