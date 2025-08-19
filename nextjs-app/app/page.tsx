@@ -3,7 +3,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import styles from '@/styles/Home.module.css';
 
 const sidebarSections = ["About Me", "Projects", "Skills", "Certificates", "Resume", "Transcript", "Contact", "Blog", "Personal Interests"];
 
@@ -121,8 +120,13 @@ function Home() {
             <h2>
               Certificates
             </h2>
-            <img src="/images/fullStackCert.jpg" alt="Joe Rogers's Full Stack Bootcamp Certification" className="cert-image"/>
-            
+            <Image 
+              src="/images/fullStackCert.jpg"
+              alt="Joe Rogers's Full Stack Bootcamp Certification" 
+              width={600} 
+              height={400} 
+              className="cert-image"
+            />       
           </section>
 
           {/* Resume */}
@@ -166,7 +170,7 @@ function Home() {
               My Top Spotify Artists
             </h3>
             <div className="top-artist-list">
-              {artists.length > 0 ? (
+              {/* {artists.length > 0 ? (
                 artists.map((artist, idx) => (
                   <div key = {idx} className="artist-card">
                     {artist.image && (
@@ -177,7 +181,7 @@ function Home() {
                 ))
               ) : (
                 <p>No artists found.</p>
-              )}
+              )} */}
             </div>
           </section>
         </main>
