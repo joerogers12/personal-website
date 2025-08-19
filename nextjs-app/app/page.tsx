@@ -1,10 +1,9 @@
 "use client";
 
+import Sidebar from '@/components/Sidebar';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-
-const sidebarSections = ["About Me", "Projects", "Skills", "Certificates", "Resume", "Transcript", "Contact", "Blog", "Personal Interests"];
 
 function Home() {
   const [artists, setArtists] = useState<{ name: string, image?: string }[]>([]);
@@ -29,28 +28,7 @@ function Home() {
       <div className="full-page">
 
         {/* Sidebar */}
-        <aside>
-          <div id="sidebar-header">
-            <a href="/" id="name-text" className="link-body-emphasis">
-              Joe Rogers
-            </a>
-            <svg id="collapse-sidebar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-left-square" viewBox="0 0 16 16">
-              <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-              <path d="M10.205 12.456A.5.5 0 0 0 10.5 12V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4a.5.5 0 0 0 .537.082"/>
-            </svg>
-          </div>
-
-          <ul id="sidebar" className="nav nav-pills">
-            {sidebarSections.map((section) => {
-              const id = section.toLowerCase().replace(/\s+/g, '-');
-              return (
-                <li key={id} className="nav-item">
-                  <a href={`#${id}`} className="nav-link link-body-emphasis" aria-current="page">{section}</a>
-                </li>
-              );
-            })}
-          </ul>
-        </aside>
+        <Sidebar />        
 
         {/* Main Content */}
         <main>
