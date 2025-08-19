@@ -1,7 +1,26 @@
 "use client";
 
+import { useState, useEffect } from 'react';
+
 function Sidebar() {
+  const [collapsed, setCollapsed] = useState(false);
+  const [activeSection, setActiveSection] = useState<string | null>(null);
+
   const sidebarSections = ["About Me", "Projects", "Skills", "Certificates", "Resume", "Transcript", "Contact", "Blog", "Personal Interests"];
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <aside>
