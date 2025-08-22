@@ -66,7 +66,6 @@ aside.collapsed {
   top: 2.5rem;
   left: 1.5rem;
   z-index: 1000;
-  display: none;
   cursor: pointer;
   color: #ffffff;
 }

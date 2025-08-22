@@ -3,11 +3,11 @@
 import { useState, useEffect } from 'react';
 
 interface sidebarProps {
-  sidebarClosed: boolean;
+  sidebarCollapsed: boolean;
   onClose: () => void; 
 };
 
-function Sidebar({ sidebarClosed, onClose }: sidebarProps) {
+function Sidebar({ sidebarCollapsed, onClose }: sidebarProps) {
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
   const sidebarSections = ["About Me", "Projects", "Skills", "Certificates", "Resume", "Transcript", "Contact", "Blog", "Personal Interests"];
@@ -27,7 +27,7 @@ function Sidebar({ sidebarClosed, onClose }: sidebarProps) {
   }, []);
 
   return (
-    <aside className={`${sidebarClosed ? "collapsed" : ""}`} >
+    <aside className={`${sidebarCollapsed ? "collapsed" : ""}`} >
       <div id="sidebar-header">
         <a href="/" id="name-text" className="link-body-emphasis">
           Joe Rogers
