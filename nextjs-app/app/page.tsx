@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 
 function Home() {
   const [artists, setArtists] = useState<{ name: string, image?: string }[]>([]);
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
   useEffect(() => {
     setArtists([
@@ -28,7 +29,7 @@ function Home() {
       <div className="full-page">
 
         {/* Sidebar */}
-        <Sidebar />        
+        <Sidebar sidebarClosed={sidebarCollapsed} onClose={() => setSidebarCollapsed(true)} />        
 
         {/* Main Content */}
         <main>
