@@ -21,6 +21,7 @@ function ProjectCard({ project }: ProjectProps) {
   return (
     <div>
       <h1>{project.name}</h1>
+      <img className="project-image" src={project.images[0]} />
     </div>
   );
 }

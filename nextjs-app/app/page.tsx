@@ -81,21 +81,6 @@ function Home() {
             {projects.map((project, i) => (
               <ProjectCard key={i} project={project} />
             ))}
-            <h3 className="project-name">
-              ZotScope
-            </h3>
-            <div className="project row">
-              <p className="description col">
-                Overview: 
-              </p>
-              <Image 
-                src="/images/zotscopeHome.png" 
-                alt="Zotscope's home page" 
-                width={600} 
-                height={400} 
-                className="project-image"
-              />
-            </div>
           </section>
 
           {/* Skills */}
