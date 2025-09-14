@@ -1,0 +1,20 @@
+[
+  {
+    "name": "ZotScope",
+    "link": "null",
+    "overview": "ZotScope is an app for planning your uci schedule",
+    "my_accomplishments": [
+      "Created the admin page"
+    ],
+    "challenges": [
+      "Implementing the CRUD operations"
+    ],
+    "future_improvements": "Open to other schools",
+    "images": [
+      "/Users/joe/personal-website/nextjs-app/public/images/zotscopeHome.png"
+    ],
+    "tech_used": [
+      { "name": "React", "icon": "null" }
+    ]
+  }
+]

@@ -5,6 +5,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
+import ProjectCard from '@/components/ProjectCard';
+
 function Home() {
   const [artists, setArtists] = useState<{ name: string, image?: string }[]>([]);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
@@ -74,6 +76,9 @@ function Home() {
             <h2>
               Projects
             </h2>
+            <ProjectCard>
+            
+            </ProjectCard>
             <h3 className="project-name">
               ZotScope
             </h3>
