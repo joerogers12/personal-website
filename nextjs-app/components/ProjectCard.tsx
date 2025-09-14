@@ -1,9 +1,26 @@
+interface TechUsed {
+  name: string,
+  icon: string,
+}
 
+interface Project {
+  name: string,
+  overview: string,
+  my_accomplishments: string[],
+  challenges: string[],
+  future_improvements: string[],
+  images: string[],
+  tech_used: TechUsed[],
+}
 
-function ProjectCard() {
+interface ProjectProps {
+  project: Project,
+}
+
+function ProjectCard({ project }: ProjectProps) {
   return (
     <div>
-      <h1></h1>
+      <h1>{project.name}</h1>
     </div>
   );
 }

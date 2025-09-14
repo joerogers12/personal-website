@@ -9,7 +9,9 @@
     "challenges": [
       "Implementing the CRUD operations"
     ],
-    "future_improvements": "Open to other schools",
+    "future_improvements": [
+      "Open to other schools"
+    ],
     "images": [
       "/Users/joe/personal-website/nextjs-app/public/images/zotscopeHome.png"
     ],

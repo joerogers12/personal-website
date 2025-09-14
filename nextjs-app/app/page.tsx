@@ -7,6 +7,8 @@ import { useEffect, useState } from 'react';
 
 import ProjectCard from '@/components/ProjectCard';
 
+import projects from "../data/projects.json";
+
 function Home() {
   const [artists, setArtists] = useState<{ name: string, image?: string }[]>([]);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
@@ -76,9 +78,9 @@ function Home() {
             <h2>
               Projects
             </h2>
-            <ProjectCard>
-            
-            </ProjectCard>
+            {projects.map((project, i) => (
+              <ProjectCard key={i} project={project} />
+            ))}
             <h3 className="project-name">
               ZotScope
             </h3>
